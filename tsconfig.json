@@ -4,11 +4,11 @@
   "compilerOptions": {
     /* Basic Options */
     "incremental": true,
-    "target": "ES6",
-    "module": "commonjs",
+    "target": "ESNext",
+    "module": "ESNext",
     "lib": ["DOM"],
     "sourceMap": true,
-    "outDir": "./dist",
+    "outDir": "./public",
 
     /* Strict Type-Checking Options */
     "strict": true,
