@@ -1,0 +1,28 @@
+html,
+body {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+iframe {
+  border: 0;
+}
+
+body > * {
+  flex: 1;
+}
+
+@media only screen and (orientation: portrait) {
+  body {
+    flex-direction: column;
+  }
+
+  .weather-app {
+    flex: unset;
+  }
+}

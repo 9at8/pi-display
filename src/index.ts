@@ -1,4 +1,5 @@
-import {foo} from './foo.js'
-const greeting = 'hello world!' + foo
+import {apps} from './apps/index.js'
 
-console.log(greeting)
+const body = document.querySelector('body')!
+
+body.append(...apps.map(render => render()))
