@@ -1,1 +1,0 @@
-# typescript-eslint-prettier-template

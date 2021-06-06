@@ -1,5 +1,5 @@
 {
-  "name": "typescript-eslint-prettier",
+  "name": "pi-display",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/9at8/typescript-eslint-prettier.git"
+    "url": "git+https://github.com/9at8/pi-display.git"
   },
   "author": "Aditya Thakral",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/9at8/typescript-eslint-prettier/issues"
+    "url": "https://github.com/9at8/pi-display/issues"
   },
-  "homepage": "https://github.com/9at8/typescript-eslint-prettier#readme",
+  "homepage": "https://github.com/9at8/pi-display#readme",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "4.26.0",
     "@typescript-eslint/parser": "4.26.0",
