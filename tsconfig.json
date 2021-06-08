@@ -6,7 +6,7 @@
     "incremental": true,
     "target": "ESNext",
     "module": "ESNext",
-    "lib": ["DOM"],
+    "lib": ["DOM", "ESNext"],
     "sourceMap": true,
     "outDir": "./public",
 
