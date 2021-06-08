@@ -1,6 +1,8 @@
 export default function render() {
   const div = document.createElement('div')
 
+  div.className = 'weather-app'
+
   let widget = createWeatherWidget()
   div.append(widget)
 
