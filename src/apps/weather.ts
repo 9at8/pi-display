@@ -31,18 +31,21 @@ function createWeatherWidget() {
   `
 
   setTimeout(() => {
-    eval(`
-      !(function (d, s, id) {
-        let js,
-          fjs = d.getElementsByTagName(s)[0]
-        if (!d.getElementById(id)) {
-          js = d.createElement(s)
-          js.id = id
-          js.src = 'https://weatherwidget.io/js/widget.min.js'
-          fjs.parentNode.insertBefore(js, fjs)
-        }
-      })(document, 'script', 'weatherwidget-io-js')
-    `)
+    const id = 'weatherwidget-io-js'
+
+    let js = document.getElementById(id) as HTMLScriptElement | null
+    const fjs = document.getElementsByTagName('script')[0]
+
+    if (js != null) {
+      js.remove()
+    }
+
+    if (!document.getElementById(id)) {
+      js = document.createElement('script')
+      js.id = id
+      js.src = 'https://weatherwidget.io/js/widget.min.js'
+      fjs?.parentNode?.insertBefore(js, fjs)
+    }
   }, 100)
 
   return div
