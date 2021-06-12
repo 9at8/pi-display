@@ -14,10 +14,6 @@ iframe {
   border: 0;
 }
 
-body > * {
-  flex: 1;
-}
-
 @media only screen and (orientation: portrait) {
   body {
     flex-direction: column;

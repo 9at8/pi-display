@@ -1,5 +1,6 @@
 export default function render() {
   const div = document.createElement('div')
+  div.style.flex = '1'
 
   div.innerHTML = `
     <iframe
