@@ -32,20 +32,14 @@ function createWeatherWidget() {
 
   setTimeout(() => {
     const id = 'weatherwidget-io-js'
-
+    const head = document.getElementsByTagName('head')[0]
     let js = document.getElementById(id) as HTMLScriptElement | null
-    const fjs = document.getElementsByTagName('script')[0]
 
-    if (js != null) {
-      js.remove()
-    }
-
-    if (!document.getElementById(id)) {
-      js = document.createElement('script')
-      js.id = id
-      js.src = 'https://weatherwidget.io/js/widget.min.js'
-      fjs?.parentNode?.insertBefore(js, fjs)
-    }
+    js?.remove()
+    js = document.createElement('script')
+    js.id = id
+    js.src = 'https://weatherwidget.io/js/widget.min.js'
+    head?.appendChild(js)
   }, 100)
 
   return div
