@@ -18,8 +18,8 @@
   },
   "homepage": "https://github.com/9at8/pi-display#readme",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "4.26.0",
-    "@typescript-eslint/parser": "4.26.0",
+    "@typescript-eslint/eslint-plugin": "4.33.0",
+    "@typescript-eslint/parser": "4.33.0",
     "eslint": "7.28.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-import": "2.23.4",
